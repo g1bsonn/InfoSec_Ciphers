@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "enigma"
+version = "0.1.0"
+description = ""
+authors = ["s.lyutavin <s.lyutavin@tbank.ru>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = {extras = ["standard"], version = "^0.115.12"}
+sqlalchemy = "^2.0.41"
+
+[tool.poetry.group.dev.dependencies]
+pytest-cov = "^6.1.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
